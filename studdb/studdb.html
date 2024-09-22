@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="studdb.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            
+            <img src="dushyant git profile pic.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="personal-info">
+                <h2>Dushyant Bhagwat</h2>
+                <p>Roll No: 123456</p>
+                <p>Information Technology, 3rd Year</p>
+                <div class="cgpa">
+                    <h3>CGPA: 8.5</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester Cards -->
+        <div class="cards-container">
+            <!-- Semesters 1 to 4 (completed) -->
+            <div class="card unlocked" onclick="viewSemester(1)">Semester 1</div>
+            <div class="card unlocked" onclick="viewSemester(2)">Semester 2</div>
+            <div class="card unlocked" onclick="viewSemester(3)">Semester 3</div>
+            <div class="card unlocked" onclick="viewSemester(4)">Semester 4</div>
+            
+            <!-- Semester 5 (ongoing) with animation -->
+            <div class="card current-ongoing" onclick="viewSemester(5)">
+                Semester 5
+                <span class="badge">Ongoing</span>
+            </div>
+
+            <!-- Semesters 6 to 8 (locked) -->
+            <div class="card locked">Semester 6</div>
+            <div class="card locked">Semester 7</div>
+            <div class="card locked">Semester 8</div>
+
+            <!-- Honours (also ongoing) -->
+            <div class="card honours-ongoing" onclick="viewSemester('Honours')">
+                Honours
+                <span class="badge">Ongoing</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="studdb.js"></script>
+</body>
+</html>
